@@ -20,7 +20,7 @@ def test_left_menu(driver):
     assert page.get_title() == 'Android Apps on Google Play'
     page.wait_element(page.categories_locator)
     page.click_categories()
-    time.sleep(5)
+    time.sleep(7)
     assert page.get_title() == 'Education - Android Apps on Google Play'
     page.search_page('TED')
     page.search_icon()
